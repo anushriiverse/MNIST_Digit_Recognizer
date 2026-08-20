@@ -36,3 +36,5 @@ Thumbs.db
 #massive model
 *.pkl
 *.pth
+
+main.ipynb
