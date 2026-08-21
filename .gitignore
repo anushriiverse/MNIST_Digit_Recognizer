@@ -37,4 +37,5 @@ Thumbs.db
 *.pkl
 *.pth
 
-main.ipynb
+# Data for fine-tuning
+collected_corrections/
