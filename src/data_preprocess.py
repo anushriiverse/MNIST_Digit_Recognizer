@@ -31,6 +31,9 @@ def center_and_resize(img):
     y_offset = (28 - new_h) // 2
     canvas[y_offset:y_offset+new_h, x_offset:x_offset+new_w] = resized
 
+    # add gaussian blur to mimic the original MNIST images
+    canvas = cv2.GaussianBlur(canvas, (3, 3), 0)
+
     return canvas
 
 def format_for_model(img):
